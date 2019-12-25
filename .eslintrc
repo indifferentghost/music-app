@@ -18,7 +18,6 @@
       "jsx": true
     },
     "project": [
-      "./tsconfig.json",
       "./client/tsconfig.json"
     ]
   },
@@ -39,6 +38,17 @@
           "assert"
         ]
       }
-    ]
+    ],
+    "import/no-extraneous-dependencies": [
+      "error",
+      {
+        "devDependencies": [
+          "config/**/*.js",
+          "**/webpack.*.js",
+          "*.config.js"
+        ],
+        "optionalDependencies": false
+      }
+    ],
   }
 }

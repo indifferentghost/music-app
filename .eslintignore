@@ -1,0 +1,2 @@
+# this is a bad fix for disabling eslint-ts from erroring webpack config/
+**/config/**
