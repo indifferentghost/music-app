@@ -28,6 +28,17 @@
     }
   },
   "rules": {
-    "@typescript-eslint/no-explicit-any": 1
+    "@typescript-eslint/no-explicit-any": 2,
+    "no-console": [
+      "error",
+      {
+        "allow": [
+          "warn",
+          "info",
+          "error",
+          "assert"
+        ]
+      }
+    ]
   }
 }
