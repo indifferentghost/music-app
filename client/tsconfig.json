@@ -1,0 +1,17 @@
+{
+  "extends": "../tsconfig.packages.json",
+  "compilerOptions": {
+    "rootDir": "./src",
+    "outDir": "./dist",
+    "lib": [
+      "dom",
+      "esnext",
+      "es2017.object"
+    ]
+  },
+  "strict": true,
+  "include": [
+    "src",
+    "types"
+  ]
+}
