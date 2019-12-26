@@ -26,7 +26,7 @@ module.exports = {
       // All output '.js' files will have any sourcemaps re-processed by 'source-map-loader'.
       {
         enforce: 'pre',
-        test: /\.js$/,
+        test: /\.js(x?)$/,
         loader: 'source-map-loader',
       },
       {
@@ -44,4 +44,7 @@ module.exports = {
       publicDir: PUBLIC_DIR,
     }),
   ],
+  resolve: {
+    extensions: ['.ts', '.tsx', '.wasm', '.mjs', '.js', '.json'],
+  },
 };

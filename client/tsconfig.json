@@ -11,7 +11,7 @@
   },
   "strict": true,
   "include": [
-    "src",
+    "./src/**/*",
     "types"
   ],
   "exclude": [
